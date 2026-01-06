@@ -1,63 +1,101 @@
- *{
-    margin: 5px;;
-    padding: 5px;
-    box-sizing: border-box;
-      }
-      body{
-        background-color: lightgray;
-      }
- 
- .welcome{
-        
-        color: aqua;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size:xx-large;
-        font-display: block;
-        border: 1px dotted;
-        border-color:cadetblue;
-        border-radius: 0%;
-        border-width:5px;
-        flex: 1;   
-        text-align: center;
-      }
-      h3{
-        border-radius: 100%;
-        background-color: coral;
-        font-weight: bolder;
-        font-display:block;
-        width: 6%;
-      }
-         .details{
-        color: bisque; 
-        background-color:burlywood;
-        width: 95%;
-      }
-      .center,h3{
-        text-align: center;
-      }
-
-  .login-btn{
-  text-align: right;
-  margin-right: 20px;
-  border:2px dashed blue;
+/* =========================
+   1️⃣ RESET / GLOBAL
+========================= */
+*{
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
 }
-.top-bar{
+
+/* =========================
+   2️⃣ BODY / PAGE
+========================= */
+body{
+  background-color: lightgray;
+}
+
+/* =========================
+   3️⃣ HEADER AREA
+========================= */
+.head{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 50px 10px;
+}
+nav li a{
+
+  text-decoration: none;
+}
+nav li a:hover{
+  background-color: aqua;
+}
+nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 150px;
 
 }
-#intro{
-  border:5px solid;
-  border-color:burlywood;
-  border-radius:50px;
-  border-top: none;
-  
+
+.login-btn{
+  text-align: right;
+  margin-right: 20px;
+  border: 2px dashed blue;
 }
+
+/* =========================
+   4️⃣ HERO / WELCOME SECTION
+========================= */
+.welcome{
+  color: aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  font-display: block;
+  border: 1px dotted cadetblue;
+  border-width: 5px;
+  border-radius: 0%;
+  flex: 1;
+  text-align: center;
+}
+
+/* =========================
+   5️⃣ INTRO / LIST SECTION
+========================= */
+#intro{
+  border: 5px solid burlywood;
+  border-radius: 50px;
+  border-top: none;
+}
+
 #list{
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 10px 20px;
+}
+
+/* =========================
+   6️⃣ FOOD CONTENT
+========================= */
+h3{
+  border-radius: 100%;
+  background-color: coral;
+  font-weight: bolder;
+  font-display: block;
+  width: 6%;
+  box-shadow: 20px 20px 50px black;
+}
+
+.details{
+  color: bisque; 
+  background-color: burlywood;
+  width: 95%;
+}
+
+/* =========================
+   7️⃣ COMMON UTILITIES
+========================= */
+.center,
+h3{
+  text-align: center;
 }
